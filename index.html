@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milanjyoti Ray | Developer, AI Enthusiast & Security Tech</title>
+    
+    <!-- SEO and Meta tags -->
+    <meta name="description" content="Portfolio of Milanjyoti Ray, specializing in building smart digital systems, AI integration, and robust security architectures.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">MR.</a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#education" class="nav-link">About Me</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ambient background glow -->
+    <div class="ambient-glow"></div>
+    
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content hero-layout">
+                <div class="hero-image-col fade-in-delay-1">
+                    <div class="avatar-container lg-avatar">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-wrapper">
+                            <img src="profile.jpg?v=2" alt="Milanjyoti Ray" class="avatar-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-text-col">
+                    <div class="badge fade-in-delay-1">
+                        <i data-lucide="sparkles" class="badge-icon"></i>
+                        <span>BS Data Science, IIT Madras</span>
+                        <span class="badge-dot">•</span>
+                        <span class="badge-location"><i data-lucide="map-pin" class="badge-icon-small"></i> India</span>
+                    </div>
+
+                    <h1 class="hero-title fade-in-delay-2">
+                        Developer, <br class="mobile-break">
+                        <span class="typed-text text-gradient"></span><span class="cursor">&nbsp;</span>
+                    </h1>
+
+                    <p class="hero-bio fade-in-delay-3">
+                        I'm Milanjyoti Ray, passionate about web development, artificial intelligence, and building real-world digital products. I am also the proud author of the book <strong>"Competitive Exams: Life Beyond The Challenge"</strong>.
+                    </p>
+
+                    <div class="hero-actions fade-in-delay-4">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-outline group">
+                            Get in touch
+                            <i data-lucide="arrow-right" class="arrow-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container animate-on-scroll">
+            <div class="section-header">
+                <span class="section-label">01 / Technical Stack</span>
+                <h2 class="section-title">
+                    Tools & <span class="text-gradient">technologies.</span>
+                </h2>
+            </div>
+            
+            <div class="skills-domain">
+                <h3 class="domain-title">Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-chip">HTML5</div>
+                    <div class="skill-chip">CSS3</div>
+                    <div class="skill-chip">JavaScript</div>
+                    <div class="skill-chip">React</div>
+                    <div class="skill-chip">Node.js</div>
+                </div>
+            </div>
+
+            <div class="skills-domain">
+                <h3 class="domain-title">Data Science & AI</h3>
+                <div class="skills-grid">
+                    <div class="skill-chip">Python</div>
+                    <div class="skill-chip">Machine Learning</div>
+                    <div class="skill-chip">TensorFlow</div>
+                    <div class="skill-chip">Keras</div>
+                </div>
+            </div>
+
+            <div class="skills-domain">
+                <h3 class="domain-title">Other Domains</h3>
+                <div class="skills-grid">
+                    <div class="skill-chip">Cybersecurity</div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container animate-on-scroll">
+        <div class="section-header">
+            <span class="section-label">02 / Selected Works</span>
+            <h2 class="section-title text-3xl md:text-5xl">
+                Real-world <span class="text-gradient">solutions.</span>
+            </h2>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card group">
+                <div class="project-hover-glow"></div>
+                <div class="project-content">
+                    <h3 class="project-title">SwiftCart</h3>
+                    <p class="project-desc">Frontend e-commerce application with intuitive cart management and ultra-clean UI architecture.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milanjyotiray/SwiftCart" target="_blank" class="project-link">
+                            <i data-lucide="github" class="link-icon"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card group">
+                <div class="project-hover-glow"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Smart Task Manager</h3>
+                    <p class="project-desc">Productivity-focused web app allowing effortless organization with dynamic task tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milanjyotiray/smart-task-manager" target="_blank" class="project-link">
+                            <i data-lucide="github" class="link-icon"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card group">
+                <div class="project-hover-glow"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Job Application Tracker</h3>
+                    <p class="project-desc">Keep detailed records of job applications, statuses, and follow-ups securely in one place.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milanjyotiray/Job-Application-Tracker-HTML-CSS-JS-" target="_blank" class="project-link">
+                            <i data-lucide="github" class="link-icon"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card group">
+                <div class="project-hover-glow"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Movie Recommendation</h3>
+                    <p class="project-desc">Machine learning based system to predict user preferences and output personalized media.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ML Algorithms</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milanjyotiray/movie-recommendation-system" target="_blank" class="project-link">
+                            <i data-lucide="github" class="link-icon"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card group">
+                <div class="project-hover-glow"></div>
+                <div class="project-content">
+                    <h3 class="project-title">MNIST CNN</h3>
+                    <p class="project-desc">Deep learning project using Convolutional Neural Networks on the standard MNIST dataset.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milanjyotiray/mnist-cnn-handwritten-digits" target="_blank" class="project-link">
+                            <i data-lucide="github" class="link-icon"></i> Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-container animate-on-scroll">
+        <div class="section-header">
+            <span class="section-label">03 / Background</span>
+            <h2 class="section-title">Education.</h2>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">May 2023 - Present</div>
+                    <h3 class="timeline-role">Bachelor's Degree, Data Science and Applications</h3>
+                    <h4 class="timeline-company">Indian Institute of Technology, Madras</h4>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Jan 2019 - Jul 2021</div>
+                    <h3 class="timeline-role">12th, PCM</h3>
+                    <h4 class="timeline-company">Krishna Kanta Handiqui Senior Secondary School</h4>
+                    <p class="timeline-desc">Dedicated and accomplished high school student with a strong academic track record. Aiming for excellence in 11th and 12th grades at Krishna Kanta Handiqui Senior Secondary School.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-period">Pre-2019</div>
+                    <h3 class="timeline-role">10th, High school leaving certificate</h3>
+                    <h4 class="timeline-company">Shankardev Shishu Vidya Niketan Kaldoba</h4>
+                    <p class="timeline-desc">Activities: Quiz, Singing, Art, Sports, General Secretary of Student Union. "Hello! I am Milanjyoti Ray, an alumni of Shankardev Shishu Vidya Niketan Kaldoba... gaining a solid foundation." Skills: Quiz, General Secretary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="section-container animate-on-scroll border-t">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-label">04 / Contact</span>
+                <h2 class="contact-title">Let's build something.</h2>
+                <p class="contact-desc">Interested in collaborating on a complex digital system or exploring AI integrations? My inbox is open.</p>
+                
+                <div class="social-links icon-only-links">
+                    <a href="mailto:milanjyotiray84@gmail.com" class="social-link" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="tel:+919678165375" class="social-link" aria-label="Phone">
+                        <i data-lucide="phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/milanjyotiray/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/milanjyotiray/" target="_blank" class="social-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/iamraymilanjyoti/" target="_blank" class="social-link" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://x.com/MilanjyotiRay" target="_blank" class="social-link" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="lucide-x"><path d="M4 4l16 16M4 20L20 4"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form glass-effect">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Contact</label>
+                            <input type="tel" name="contact" placeholder="+91 9876543210" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" name="address" placeholder="City, Country" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="4" placeholder="How can I help you?" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary w-full shadow-sm text-sm border-0">
+                        Send Message
+                    </button>
+                    <p id="form-status" style="margin-top: 1rem; text-align: center; font-size: 0.875rem; color: var(--text-secondary); display: none;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Milanjyoti Ray.</p>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/iamraymilanjyoti/" target="_blank" class="footer-link">Instagram</a>
+                <a href="https://x.com/MilanjyotiRay" target="_blank" class="footer-link">X</a>
+                <a href="https://www.facebook.com" target="_blank" class="footer-link">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</main>
+
+    <!-- Floating Audio Control -->
+    <button id="audio-toggle" class="audio-control" aria-label="Toggle Background Music">
+        <i data-lucide="volume-x" id="audio-icon"></i>
+    </button>
+
+    <!-- Background Audio Element -->
+    <audio id="bg-audio" loop>
+        <!-- User needs to drop their MP3 into this folder and update here -->
+        <source src="raga_guitar.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="app.js"></script>
+    <script src="particles.js"></script>
+    <script>
+      // Initialize icons
+      lucide.createIcons();
+    </script>
+</body>
+</html>
