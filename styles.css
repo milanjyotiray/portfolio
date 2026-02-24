@@ -219,7 +219,9 @@ body {
 
 /* Hero Section Specifics */
 .hero {
-    min-height: auto;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,6 +255,11 @@ body {
     .hero-text-col {
         flex: 1;
         padding-left: 3rem;
+        min-height: 380px;
+        /* Lock height so wrapped text doesn't push sections down */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .hero-image-col {
@@ -383,6 +390,8 @@ body {
     margin-bottom: 1.5rem;
     letter-spacing: -0.03em;
     color: #fff;
+    min-height: 5em;
+    /* Prevent layout shift during typewriter effect, fits 3 lines */
 }
 
 @media (min-width: 640px) {
@@ -392,12 +401,16 @@ body {
 
     .hero-title {
         font-size: 3rem;
+        min-height: 4.5em;
+        /* Ensure enough height for 3 wrapping lines */
     }
 }
 
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4.5rem;
+        min-height: 4.5em;
+        /* Ensure enough height for 3 wrapping lines perfectly */
     }
 }
 
