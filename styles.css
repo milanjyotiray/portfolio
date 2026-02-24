@@ -34,6 +34,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -163,6 +164,8 @@ body {
     color: var(--text-primary);
     cursor: pointer;
     padding: 0.25rem;
+    z-index: 1001;
+    /* Ensure it stays above navigation overlay */
 }
 
 @media (min-width: 768px) {
@@ -384,7 +387,8 @@ body {
 /* Hero Typography */
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 2.25rem;
+    /* Reduced for mobile */
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -914,24 +918,32 @@ body {
 
 .social-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* Change to row to display horizontally */
+    flex-wrap: wrap;
+    /* Important to let icons wrap */
     gap: 1rem;
+    align-items: center;
 }
 
 .social-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: center;
+    width: 40px;
+    /* Fixed touch target size */
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
     color: var(--text-secondary);
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease, transform 0.2s ease;
-    width: fit-content;
+    transition: all 0.2s ease;
 }
 
 .social-link:hover {
     color: #fff;
-    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
 .social-link i {
@@ -1004,28 +1016,32 @@ body {
 .audio-control {
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    right: 1.5rem;
+    /* Pinned to viewport, not body */
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--border-color);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1000;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .audio-control:hover {
-    color: var(--text-primary);
-    border-color: var(--border-hover);
-    transform: translateY(-3px) scale(1.05);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.audio-control i {
+    width: 20px;
+    height: 20px;
 }
 
 /* Contact Social Links - Icon Row */
