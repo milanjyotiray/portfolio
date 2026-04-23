@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "developing real-world digital products.",
         "exploring Artificial Intelligence.",
         "securing complex technical systems.",
+        "founding AstraNex Defence.",
         "writing books on life challenges."
     ];
     const typingDelay = 80;
